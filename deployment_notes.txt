@@ -1,0 +1,10 @@
+Application Deployment:
+
+1.When MySQL database is deployed you need to change "jdbc:mysql://localhost:3306/lurie_db?serverTimezone=UTC"
+localhost address with ipaddress from server where you have deployed your database.
+
+2.Then you deployed also the backend "spring boot" application
+
+3.Then you deploy the frontend "react" application, and when you have the frontend deployed ipaddress,
+you need to change in both controllers in backend the annotation "@CrossOrigin(origins = "http://localhost:3000")" 
+the ipaddress or domain of your deployed frontend application.

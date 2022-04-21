@@ -71,7 +71,7 @@ public class KeysFileServiceImpl implements KeysFileService {
                 throw new FileStorageException("Sorry! Filename contains invalid path sequence " + fileName);
             }
 
-            KeysFile keysFile = new KeysFile(fileName, file.getContentType(), file.getBytes(), LocalDateTime.now(), null, false);
+            KeysFile keysFile = new KeysFile(fileName, file.getContentType(), file.getBytes(), LocalDateTime.now()  , null, false);
 
             return keysFileRepository.save(keysFile);
         } catch (IOException ex) {

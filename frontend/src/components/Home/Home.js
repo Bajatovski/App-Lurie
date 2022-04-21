@@ -131,6 +131,7 @@ const Home = () =>{
                         <Dropdown.Item>Ethereum</Dropdown.Item>
                         <Dropdown.Item>Bitcoin</Dropdown.Item>
                         <Dropdown.Item>Tether</Dropdown.Item>
+                        <Dropdown.Item>Custom</Dropdown.Item>
                     </Dropdown.Menu>
                     <h5 className={"mt-3"}>{blockchainType}</h5>
                 </Dropdown>

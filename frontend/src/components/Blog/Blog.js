@@ -8,11 +8,12 @@ function Blog() {
     const [showMoreTwo, setShowMoreTwo] = useState(false);
     const [showMoreThree, setShowMoreThree] = useState(false);
     const [showMoreFour, setShowMoreFour] = useState(false);
+    const [showMoreFive, setShowMoreFive] = useState(false);
 
-    const  textOne = "tetexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextexttexttexttexttexttexttextttextxt";
-    const  textTwo = "tetexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextexttexttexttexttexttexttextttextxt";
+    const  textOne = "tetexttexttexttexttexttexttexttexttexnbrttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextexttexttexttexttexttexttextttextxt";
+    const  textTwo = "tetexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextexttexttexttexttexttexttextttextxt";
     const  textThree = "tetexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextexttexttexttexttexttexttextttextxt";
-    const  textFour = "tetexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextexttexttexttexttexttexttextttextxt";
+    const  textFour = "this is new card";
     {/* Write the content in another text const as shown above, you have to make another const showMoreFive for example
                     and make the same logic  */}
     
