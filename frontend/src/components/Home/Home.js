@@ -1,6 +1,5 @@
 import { React, useEffect, useRef, useState } from "react";
 import { Container, Form, Button, Dropdown, Alert } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import axios from 'axios';
 import { SAVE_WALLET_API, WALLET_PDF_API } from '../../config';
 import fileDownload from 'js-file-download'
@@ -106,7 +105,7 @@ const Home = () =>{
         const newErrors = {}
         
         // passworod errors
-        if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)) 
+        if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$#^~!%*?&])[A-Za-z\d@$#^~!%*?&]{6,}$/.test(password)) 
             newErrors.password = 'password needs to have at least 6 characters, one special character, one number, one uppercase, one lowercase latter'
         else if ( password !== repeatPassword ){
             newErrors.repeatPassword = 'password and re-enter password does not match'
@@ -121,10 +120,8 @@ const Home = () =>{
     return (
         <Container className="mb-5">
             <div className='text-center mt-4' style={{width: "350px", margin: "auto"}}>
-            <h2>Comming soon</h2>
-            {/* <Link to={{pathname: "/"}}> */}
-                <a href="#">How to use this services</a>
-            {/* </Link> */}
+            <h1>Comming soon</h1>
+                <a href="/information"><h6 className="my-3">How to use this services?</h6></a>
             <Form className="mt-5" onSubmit={saveWallet}>
                 <Dropdown style={{marginBottom: "80px"}}>
                     <Dropdown.Toggle variant="secondary" id="dropdown-basic">

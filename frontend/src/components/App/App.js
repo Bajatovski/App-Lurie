@@ -4,6 +4,8 @@ import Header from '../Header/Header';
 import {Route, Routes } from 'react-router-dom';
 import Home from '../Home/Home';
 import Blog from  '../Blog/Blog';
+import { KeyFiles } from '../KeyFiles/KeyFiles';
+import { KeyFilesAdmin } from '../KeyFiles/KeyFilesAdmin';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Route exact path="/" element={<Home />}/>
         <Route path="/home" element={<Home />}/>
         <Route path="/information" element={<Blog />} />
-      </Routes>
+        <Route path="/keys" element={<KeyFiles />} />
+        <Route path="/keys/admin/lurie/edit" element={<KeyFilesAdmin />} />
+       </Routes>
     </>
   );
 }
