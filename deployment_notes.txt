@@ -8,3 +8,5 @@ localhost address with ipaddress from server where you have deployed your databa
 3.Then you deploy the frontend "react" application, and when you have the frontend deployed ipaddress,
 you need to change in both controllers in backend the annotation "@CrossOrigin(origins = "http://localhost:3000")" 
 the ipaddress or domain of your deployed frontend application.
+
+-Admin url for adding new keys files is: (http://localhost:3000/keys/admin/lurie/edit)
